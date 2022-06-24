@@ -1,0 +1,83 @@
+body {
+  background: #fff8f8;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  box-shadow: 0px 5px 6px rgb(236, 233, 233);
+  background: white;
+}
+
+.tab .tab-item {
+  padding: 0px 30px;
+  margin: 0px 10px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #3b3a3a;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  opacity: 0.5;
+}
+
+.tab .tab-item:hover {
+  border-bottom: 2px solid rgb(83, 83, 88);
+  opacity: 1;
+}
+
+.tab .tab-item-act {
+  padding: 0px 30px;
+  margin: 0px 10px;
+  font-size: 26px;
+  font-weight: 700;
+  cursor: pointer;
+  color: rgb(124, 95, 255);
+  border-bottom: 2px solid rgb(81, 81, 250);
+}
+
+.tab-content {
+  max-width: 720px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.personal {
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgb(206, 206, 206);
+  max-width: 350px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: white;
+}
+
+h4 {
+  margin: 0;
+  margin-right: 10px;
+}
+p {
+  margin: 0;
+  display: flex;
+  font-size: 14px;
+}
