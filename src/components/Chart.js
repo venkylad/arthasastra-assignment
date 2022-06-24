@@ -22,7 +22,7 @@ ChartJS.register(
   Filler
 );
 
-const ChartComponent = () => {
+const ChartComponent = ({ tableData }) => {
   //options for axis names for chart
   const options = {
     responsive: true,
@@ -65,11 +65,11 @@ const ChartComponent = () => {
 
   // state for chart
   const [data, setData] = useState({
-    labels: [2004, 2008, 2012, 2016, 2020],
+    labels: tableData?.map((item) => item.Year),
     datasets: [
       {
         label: "Medals won by india in olympics",
-        data: [1, 3, 6, 2, 7],
+        data: tableData?.map((item) => item.Medals),
         backgroundColor: "yellow",
         borderColor: "rgb(81, 81, 250)",
         tension: 0,

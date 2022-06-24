@@ -30,7 +30,11 @@ const Tabs = () => {
         </div>
       </div>
       <div className="tab-content">
-        {tab === "table" ? <Table data={tableData} /> : <ChartComponent />}
+        {tab === "table" ? (
+          <Table data={tableData} />
+        ) : (
+          <ChartComponent tableData={tableData} />
+        )}
       </div>
       <Personal />
     </>
